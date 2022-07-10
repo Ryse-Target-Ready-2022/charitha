@@ -8,7 +8,6 @@ public class LearningresourcesApiCharithaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LearningresourcesApiCharithaApplication.class, args);
-		System.out.println("Hello World !");
 	}
 
 }
