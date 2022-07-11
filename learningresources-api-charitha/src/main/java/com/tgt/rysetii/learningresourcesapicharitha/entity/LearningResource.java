@@ -1,4 +1,4 @@
-package com.tgt.rysetii.learningresourcesapi.entity;
+package com.tgt.rysetii.learningresourcesapicharitha.entity;
 
 import java.time.LocalDate;
 
