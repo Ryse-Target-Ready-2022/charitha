@@ -3,6 +3,8 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="learningresources-api-charitha" target="11" />
+      <module name="learningresources-api-charitha.learningresources-api-charitha.main~1" target="11" />
+      <module name="learningresources-api-charitha.learningresources-api-charitha.test~1" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
