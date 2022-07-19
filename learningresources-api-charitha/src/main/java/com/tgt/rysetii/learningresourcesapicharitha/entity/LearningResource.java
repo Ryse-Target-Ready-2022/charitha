@@ -1,15 +1,33 @@
 package com.tgt.rysetii.learningresourcesapicharitha.entity;
 
+import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class LearningResource {
+
+@Component
+@Entity
+@Table(name="Learning_Resources")
+public class LearningResource implements Serializable {
+    @Id
+    @Column(name="ID")
     private Integer learningResourceId;
+    @Column(name="NAME")
     private String productName;
+    @Column(name="COST_PRICE")
     private Double costPrice;
+    @Column(name="SELLING_PRICE")
     private Double sellingPrice;
+    @Column(name="STATUS")
+    @Enumerated(EnumType.STRING)
     private LearningResourceStatus learningResourceStatus;
+    @Column(name="CREATED_DATE")
     private LocalDate createdDate;
+    @Column(name="PUBLISHED_DATE")
     private LocalDate publishedDate;
+    @Column(name="RETIRED_DATE")
     private LocalDate retiredDate;
 
     public LearningResource() {
@@ -88,5 +106,19 @@ public class LearningResource {
 
     public void setRetiredDate(LocalDate retiredDate) {
         this.retiredDate = retiredDate;
+    }
+
+    @Override
+    public String toString(){
+        return "LearningResource{" +
+                "learningResourceId=" + learningResourceId +
+                ", learningResourceName='" + productName + '\'' +
+                ", costPrice=" + costPrice +
+                ", sellingPrice=" + sellingPrice +
+                ", learningResourceStatus=" + learningResourceStatus +
+                ", createdDate=" + createdDate +
+                ", publishedDate=" + publishedDate +
+                ", retiredDate=" + retiredDate +
+                '}';
     }
 }
