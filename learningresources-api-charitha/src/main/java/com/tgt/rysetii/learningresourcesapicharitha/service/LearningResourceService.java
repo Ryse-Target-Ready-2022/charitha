@@ -18,7 +18,7 @@ public class LearningResourceService {
 
     public LearningResourceService(LearningResourceRepository learningResourceRepository)
     {this.learningResourceRepository=learningResourceRepository;}
-    private List<LearningResource> getLearningResources()
+    public List<LearningResource> getLearningResources()
     {
         return learningResourceRepository.findAll();
     }
@@ -42,5 +42,8 @@ public class LearningResourceService {
             return profitMargin2.compareTo(profitMargin1) ;
         });
         return learningResources;
+    }
+    public void deleteLearningResourceById(int learningResourceId) {
+        learningResourceRepository.deleteById(learningResourceId);
     }
 }
