@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="learningresources-api-charitha" target="11" />
+      <module name="learningresources-api-charitha.learningresources-api-charitha" target="11" />
+      <module name="learningresources-api-charitha.learningresources-api-charitha.main" target="11" />
       <module name="learningresources-api-charitha.learningresources-api-charitha.main~1" target="11" />
+      <module name="learningresources-api-charitha.learningresources-api-charitha.test" target="11" />
       <module name="learningresources-api-charitha.learningresources-api-charitha.test~1" target="11" />
     </bytecodeTargetLevel>
   </component>
